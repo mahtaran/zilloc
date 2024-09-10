@@ -17,6 +17,7 @@ spotless {
 
 	json {
 		target("**/*.json")
+		targetExclude("dependency-graph-reports/**/*.json")
 
 		jackson()
 	}
