@@ -3,6 +3,9 @@ name: Check
 on:
   push:
 
+permissions:
+  contents: write
+
 jobs:
   check-style:
     name: Check style
