@@ -7,7 +7,7 @@ plugins {
 }
 
 spotless {
-	// ratchetFrom "origin/main"
+	ratchetFrom("origin/main")
 
 	flexmark {
 		target("**/*.md")
