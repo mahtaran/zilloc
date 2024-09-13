@@ -77,8 +77,7 @@ fun Localisation(
 	)
 
 	val bluetoothManager = context.getSystemService(Context.BLUETOOTH_SERVICE) as BluetoothManager
-	val bluetoothAdapter = bluetoothManager.adapter
-	viewModel.updateBLEScanner(bluetoothAdapter.bluetoothLeScanner)
+	viewModel.updateBLEScanner(bluetoothManager.adapter.bluetoothLeScanner)
 
 	if (permissionState.allPermissionsGranted) {
 		when (configuration.orientation) {
