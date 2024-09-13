@@ -7,7 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import nl.utwente.smartspaces.zilloc.ui.Anomalies
+import nl.utwente.smartspaces.zilloc.ui.Localisation
 import nl.utwente.smartspaces.zilloc.ui.theme.ZillocTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
 		setContent {
 			ZillocTheme {
 				Scaffold(modifier = Modifier.fillMaxSize()) { padding ->
-					Anomalies(padding)
+					Localisation(padding)
 				}
 			}
 		}
